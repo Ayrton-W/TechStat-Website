@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Product Cards
     const productCards = [
-        document.querySelector(".v32_4"),
-        document.querySelector(".v32_9"),
-        document.querySelector(".v32_14"),
-        document.querySelector(".v31_28"),
-        document.querySelector(".v31_33"),
-        document.querySelector(".v31_38"),
-        document.querySelector(".v32_83")
+        document.querySelector(".productDisplay1"),
+        document.querySelector(".productDisplay2"),
+        document.querySelector(".productDisplay3"),
+        document.querySelector(".productDisplay4"),
+        document.querySelector(".productDisplay5"),
+        document.querySelector(".productDisplay6"),
+        document.querySelector(".productDisplay7")
     ];
 
     // Product Card Hover Effect

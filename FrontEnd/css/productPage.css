@@ -423,10 +423,35 @@ body {
   top: 128px;
   left: 837px;
   font-family: Inter;
-  font-weight: Medium;
   font-size: 32px;
   opacity: 1;
   text-align: left;
+}
+.quantity {
+  width: 515px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 178px;
+  left: 837px;
+  font-family: Inter;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: #d0d0d0;
+  color: #000;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .productDescription {
   width: 515px;

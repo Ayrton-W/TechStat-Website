@@ -58,25 +58,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ==========================
-    // Category Button Highlight
-    // ==========================
-
-    const categoryButtons =
-        document.querySelectorAll(".category-btn");
-
-    categoryButtons.forEach(button => {
-
-        button.addEventListener("click", () => {
-
-            categoryButtons.forEach(btn => {
-                btn.classList.remove("active-category");
-            });
-
-            button.classList.add("active-category");
-
-        });
-
-    });
-
 });
