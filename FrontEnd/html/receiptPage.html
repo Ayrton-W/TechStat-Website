@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <link rel="stylesheet" href="../css/receiptPage.css">
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="techstatBanner"></div>
+
+    <div class="receipt-container">
+
+        <a href="index.html" id="backBtn" class="back-link">← Back to Home</a>
+
+        <!-- Action Buttons -->
+        <div class="receipt-actions">
+            <button id="downloadBtn">Download PDF</button>
+            <button id="printBtn">Print Receipt</button>
+            <button id="emailBtn">Email Receipt</button>
+        </div>
+        <!-- Receipt Card -->
+        <div class="receipt-card">
+
+            <!-- Header -->
+            <div class="receipt-header">
+
+                <div class="receipt-icon">
+                    📄
+                </div>
+
+                <h1>TECHSTAT Marketplace</h1>
+                <p>Official Transaction Receipt</p>
+
+            </div>
+
+            <!-- Receipt Info -->
+            <div class="receipt-info">
+
+                <div>
+                    <label>Receipt Number</label>
+                    <div class="receipt-number-container">
+                        <p id="receiptNumber">ORDER-123456</p>
+                        <button id="copyReceiptBtn">Copy</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Date</label>
+                    <p id="receiptDate"></p>
+                </div>
+
+                <div>
+                    <label>Time</label>
+                    <p id="receiptTime"></p>
+                </div>
+
+                <div class="paid-badge">
+                    Paid
+                </div>
+
+            </div>
+
+            <!-- Buyer Seller -->
+            <div class="section">
+
+                <h3>Transaction Details</h3>
+
+                <div class="details-grid">
+
+                    <div>
+                        <h4>Buyer</h4>
+                        <p>John Doe</p>
+                        <p>john.doe@student.ac.za</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Purchased Items -->
+            <div class="section">
+
+                <h3>Items Purchased</h3>
+
+                <div class="item">
+                    <span>MacBook Pro 13-inch (2020)</span>
+                    <span>R750.00</span>
+                </div>
+
+                <div class="quantity">
+                    Quantity: 1
+                </div>
+
+                <div class="item">
+                    <span>Wireless Mouse</span>
+                    <span>R18.00</span>
+                </div>
+
+                <div class="quantity">
+                    Quantity: 1
+                </div>
+
+            </div>
+
+            <!-- Totals -->
+            <div class="totals">
+
+                <div>
+                    <span>Subtotal</span>
+                    <span>R768.00</span>
+                </div>
+
+                <div>
+                    <span>Delivery Fee</span>
+                    <span>R5.00</span>
+                </div>
+
+                <div class="grand-total">
+                    <span>Total:</span>
+                    <span>R773.00</span>
+                </div>
+
+            </div>
+
+            <!-- Payment Info -->
+            <div class="section">
+
+                <h3>Payment method</h3>
+                <p>Card (****4242)</p>
+
+                <h3>Delivery Method</h3>
+                <p>Secure Pickup Point - Bellville Campus</p>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="receipt-footer">
+
+                <p>
+                    Thank you for shopping with TechStat
+                </p>
+
+                <small>
+                    This is an official receipt for your transaction.
+                </small>
+
+                <div class="qr-placeholder">
+                    QR Code
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="../javascript/receiptPage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,988 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.entireCategoryPage {
+  width: 100%;
+  height: 2250px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/* Header area with logo and company name */
+.techstatBanner {
+  width: 100%;
+  height: 200px;
+  background: url("../images/techstatBanner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Product categories area with buttons for each category */
+.divProductCategories {
+  width: 100%;
+  height: 120px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  overflow: hidden;
+}
+.homeButton {
+  width: 97px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblHomeButton {
+  width: 49px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.threeDPrintingButton {
+  width: 150px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 130px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblThreeDPrintingButton {
+  width: 102px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.electricalButton {
+  width: 146px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 294px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblElectricalButton {
+  width: 98px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.toolsButton {
+  width: 102px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 454px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblToolsButton {
+  width: 54px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.arduinoButton {
+  width: 122px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 570px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblArduinoButton {
+  width: 74px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.bbcMicrobitButton {
+  width: 164px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 706px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblBbcMicrobitButton {
+  width: 116px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.laserButton {
+  width: 99px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 884px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblLaserButton {
+  width: 51px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.solarButton {
+  width: 102px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 997px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblSolarButton {
+  width: 54px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.paperAndInkButton {
+  width: 169px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 1113px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblPaperAndInkButton {
+  width: 121px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.filamentButton {
+  width: 129px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 1296px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblFilamentButton {
+  width: 81px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* Main content area */
+.v32_2 {
+  width: 100%;
+  height: 2227px;
+  background: url("../images/v32_2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 320px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_82 {
+  width: 100%;
+  height: 696px;
+  background: url("../images/v32_82.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 32px;
+  opacity: 1;
+  position: absolute;
+  top: 1495px;
+  left: 81px;
+  overflow: hidden;
+}
+.v32_83 {
+  width: 405px;
+  height: 505px;
+  background: url("../images/v32_83.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 95px;
+  left: 0px;
+  overflow: hidden;
+}
+.v54_15 {
+  width: 405px;
+  height: 405px;
+  background: url("../images/v54_15.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_85 {
+  width: 381px;
+  height: 76px;
+  background: url("../images/v32_85.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 429px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_86 {
+  width: 381px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v32_87 {
+  width: 381px;
+  color: rgba(130, 130, 130, 1);
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v31_27 {
+  width: 100%;
+  height: 696px;
+  background: url("../images/v31_27.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 32px;
+  opacity: 1;
+  position: absolute;
+  top: 799px;
+  left: 81px;
+  overflow: hidden;
+}
+.v31_28 {
+  width: 405px;
+  height: 541px;
+  background: url("../images/v31_28.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 77px;
+  left: 0px;
+  overflow: hidden;
+}
+.v54_6 {
+  width: 405px;
+  height: 405px;
+  background: url("../images/v54_6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v31_30 {
+  width: 381px;
+  height: 112px;
+  background: url("../images/v31_30.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 429px;
+  left: 0px;
+  overflow: hidden;
+}
+.v31_31 {
+  width: 381px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v31_32 {
+  width: 381px;
+  color: rgba(130, 130, 130, 1);
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v31_33 {
+  width: 405px;
+  height: 541px;
+  background: url("../images/v31_33.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 77px;
+  left: 437px;
+  overflow: hidden;
+}
+.v54_9 {
+  width: 405px;
+  height: 405px;
+  background: url("../images/v54_9.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v31_35 {
+  width: 381px;
+  height: 112px;
+  background: url("../images/v31_35.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 429px;
+  left: 0px;
+  overflow: hidden;
+}
+.v31_36 {
+  width: 381px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v31_37 {
+  width: 381px;
+  color: rgba(130, 130, 130, 1);
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v31_38 {
+  width: 405px;
+  height: 505px;
+  background: url("../images/v31_38.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 96px;
+  left: 874px;
+  overflow: hidden;
+}
+.v54_12 {
+  width: 405px;
+  height: 405px;
+  background: url("../images/v54_12.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v31_40 {
+  width: 381px;
+  height: 76px;
+  background: url("../images/v31_40.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 429px;
+  left: 0px;
+  overflow: hidden;
+}
+.v31_41 {
+  width: 381px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v31_42 {
+  width: 381px;
+  color: rgba(130, 130, 130, 1);
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v32_3 {
+  width: 100%;
+  height: 696px;
+  background: url("../images/v32_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 32px;
+  opacity: 1;
+  position: absolute;
+  top: 103px;
+  left: 81px;
+  overflow: hidden;
+}
+.v32_4 {
+  width: 405px;
+  height: 541px;
+  background: url("../images/v32_4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 77px;
+  left: 0px;
+  overflow: hidden;
+}
+.v42_3 {
+  width: 405px;
+  height: 405px;
+  background: url("../images/v42_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_6 {
+  width: 379px;
+  height: 112px;
+  background: url("../images/v32_6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 429px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_7 {
+  width: 379px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v32_8 {
+  width: 379px;
+  color: rgba(130, 130, 130, 1);
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v32_9 {
+  width: 405px;
+  height: 505px;
+  background: url("../images/v32_9.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 95px;
+  left: 437px;
+  overflow: hidden;
+}
+.v42_6 {
+  width: 405px;
+  height: 405px;
+  background: url("../images/v42_6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_11 {
+  width: 381px;
+  height: 76px;
+  background: url("../images/v32_11.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 429px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_12 {
+  width: 381px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v32_13 {
+  width: 381px;
+  color: rgba(130, 130, 130, 1);
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v32_14 {
+  width: 405px;
+  height: 505px;
+  background: url("../images/v32_14.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 96px;
+  left: 874px;
+  overflow: hidden;
+}
+.v44_3 {
+  width: 405px;
+  height: 405px;
+  background: url("../images/v44_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_16 {
+  width: 381px;
+  height: 76px;
+  background: url("../images/v32_16.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 429px;
+  left: 0px;
+  overflow: hidden;
+}
+.v32_17 {
+  width: 381px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v32_18 {
+  width: 381px;
+  color: rgba(130, 130, 130, 1);
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v32_20 {
+  width: 450px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 30px;
+  left: 495px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 46px;
+  opacity: 1;
+  text-align: center;
+}
+
+/* Bottom of the page contact information and company name */
+.divMoreinfo {
+  width: 100%;
+  height: 280px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 2547px;
+  left: 1px;
+  overflow: hidden;
+}
+.divPhone {
+  width: 187px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 48px;
+  left: 1173px;
+  overflow: hidden;
+}
+.lblPhone {
+  width: 187px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.lblPhoneNumber {
+  width: 187px;
+  color: rgba(68, 68, 68, 1);
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.divEmail {
+  width: 187px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 48px;
+  left: 955px;
+  overflow: hidden;
+}
+.lblEmail {
+  width: 187px;
+  color: rgba(68, 68, 68, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.lblEmail1 {
+  width: 187px;
+  color: rgba(68, 68, 68, 1);
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.lblEmail2 {
+  width: 187px;
+  color: rgba(68, 68, 68, 1);
+  position: absolute;
+  top: 96px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.lblTechstat {
+  width: 124px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 52px;
+  left: 80px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v32_4,
+.v32_9,
+.v32_14,
+.v31_28,
+.v31_33,
+.v31_38,
+.v32_83 {
+  transition: 0.3s ease;
+}
+
+.homeButton,
+.threeDPrintingButton,
+.electricalButton,
+.toolsButton,
+.arduinoButton,
+.bbcMicrobitButton,
+.laserButton,
+.solarButton,
+.paperAndInkButton,
+.filamentButton {
+  cursor: pointer;
+}

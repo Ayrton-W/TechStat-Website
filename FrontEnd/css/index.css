@@ -1,0 +1,496 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.entireIndex {
+  width: 100%;
+  height: 1280px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+/* Header area with logo and company name */
+.techstatBanner {
+  width: 100%;
+  height: 200px;
+  background: url("../images/techstatBanner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Product categories area with buttons for each category */
+.divProductCategories {
+  width: 100%;
+  height: 120px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  overflow: hidden;
+}
+.homeButton {
+  width: 97px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblHomeButton {
+  width: 49px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.threeDPrintingButton {
+  width: 150px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 130px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblThreeDPrintingButton {
+  width: 102px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.electricalButton {
+  width: 146px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 294px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblElectricalButton {
+  width: 98px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.toolsButton {
+  width: 102px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 454px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblToolsButton {
+  width: 54px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.arduinoButton {
+  width: 122px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 570px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblArduinoButton {
+  width: 74px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.bbcMicrobitButton {
+  width: 164px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 706px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblBbcMicrobitButton {
+  width: 116px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.laserButton {
+  width: 99px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 884px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblLaserButton {
+  width: 51px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.solarButton {
+  width: 102px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 997px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblSolarButton {
+  width: 54px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.paperAndInkButton {
+  width: 169px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 1113px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblPaperAndInkButton {
+  width: 121px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.filamentButton {
+  width: 129px;
+  height: 52px;
+  background: rgba(0, 0, 0, 1);
+  padding: 14px 24px;
+  margin: 8px;
+  opacity: 1;
+  position: absolute;
+  top: 14px;
+  left: 1296px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05000000074505806);
+  overflow: hidden;
+}
+.lblFilamentButton {
+  width: 81px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* Main content area with information about the company and products */
+.infoDisplay {
+  width: 100%;
+  height: 680px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 320px;
+  left: 0px;
+  overflow: hidden;
+}
+.infoImageDisplay {
+  width: 718px;
+  height: 591px;
+  background: url("../images/infoImageDisplay.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 31px;
+  left: 40px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow: hidden;
+}
+.infoDescriptionDisplay {
+  width: 519px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 198px;
+  left: 827px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.infoTitleDisplay {
+  width: 526px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 31px;
+  left: 827px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* Bottom of the page contact information and company name */
+.divMoreinfo {
+  width: 100%;
+  height: 280px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 1000px;
+  left: 1px;
+  overflow: hidden;
+}
+.divPhone {
+  width: 187px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 48px;
+  left: 1173px;
+  overflow: hidden;
+}
+.lblPhone {
+  width: 187px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.lblPhoneNumber {
+  width: 187px;
+  color: rgba(68, 68, 68, 1);
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.divEmail {
+  width: 187px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 48px;
+  left: 955px;
+  overflow: hidden;
+}
+.lblEmail {
+  width: 187px;
+  color: rgba(68, 68, 68, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.lblEmail1 {
+  width: 187px;
+  color: rgba(68, 68, 68, 1);
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.lblEmail2 {
+  width: 187px;
+  color: rgba(68, 68, 68, 1);
+  position: absolute;
+  top: 96px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.lblTechstat {
+  width: 124px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 52px;
+  left: 80px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
