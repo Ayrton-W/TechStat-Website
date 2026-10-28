@@ -172,14 +172,14 @@ body {
 
 /* Primary Button */
 
-.continue-shopping-btn {
+.view-receipt-btn {
   background: #ffd700;
   color: #000;
   border: none;
   transition: 0.3s;
 }
 
-.continue-shopping-btn:hover {
+.view-receipt-btn:hover {
   background: #e6c200;
 }
 

@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Continue Shopping
 
     document
-        .getElementById("continueShoppingBtn")
+        .getElementById("viewReceiptBtn")
         .addEventListener("click", () => {
 
             window.location.href =
-                "index.html";
+                "receiptPage.html";
 
         });
 
