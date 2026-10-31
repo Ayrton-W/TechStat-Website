@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Customers Page</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add,close,dark_mode,grid_view,light_mode,local_mall,logout,mail_outline,menu,person,query_stats,receipt_long,report_gmailerrorred,settings,shopping_cart,stacked_line_chart,trending_up" />
+    <link rel="stylesheet" href="../css/adminCustomers.css" />
+</head>
+
+<body>
+    <div class="container">
+
+
+        <!-- left aside section -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <h2><span class="techStat">TECHSTAT</span></h2>
+                </div>
+                <div class="close" id="close_btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+
+
+            <div class="sidebar">
+                <a href="adminDashboard.html">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="adminCustomers.html" class="active">
+                    <span class="material-symbols-outlined">person</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">query_stats</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="adminOrders.html">
+                    <span class="material-symbols-outlined">mail_outline</span>
+                    <h3>Orders</h3>
+                    <span class="order_count">14</span>
+                </a>
+                <a href="adminProducts.html">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    <h3>Products</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+
+        <section class="main-content">
+
+            <div class="header">
+                <div>
+                    <h1>Customer List</h1>
+                </div>
+            </div>
+
+            <div class="filters">
+                <button class="active">All</button>
+                <button>Customer Name</button>
+                <button>Email</button>
+                <button>Phone Number</button>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <!--Start of table-->
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="select-column">
+                            <input type="checkbox" name="order-selection" value="All" aria-label="Select All" checked>
+                        </th>
+                        <th>Customer Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="order-row">
+                        <td class="select-column">
+                            <input type="checkbox" name="order-selection" value="4821" aria-label="Select order #4821">
+                        </td>
+                        <td>Sarah Mitchell</td>
+                        <td>sarahmitchell123@gmail.com</td>
+                        <td>+27 68 123 9654</td>
+                    </tr>
+
+                    <tr class="order-row">
+                        <td class="select-column">
+                            <input type="checkbox" name="order-selection" value="4817" aria-label="Select order #4817">
+                        </td>
+                        <td>Andrew Kennith</td>
+                        <td>andrewkennith123@gmail.com</td>
+                        <td>+27 68 123 7014</td>
+                    </tr>
+
+                    <tr class="order-row">
+                        <td class="select-column">
+                            <input type="checkbox" name="order-selection" value="4816" aria-label="Select order #4816">
+                        </td>
+                        <td>Marcus Webb</td>
+                        <td>marcuswebb123@gmail.com</td>
+                        <td>+27 78 123 3056</td>
+                    </tr>
+
+                    <tr class="order-row">
+                        <td class="select-column">
+                            <input type="checkbox" name="order-selection" value="4815" aria-label="Select order #4815">
+                        </td>
+                        <td>Carmen Williams</td>
+                        <td>caremnwilliams123@gmail.com</td>
+                        <td>+27 72 671 9374</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <!--End of table-->
+        </section>
+        </main>
+
+    </div>
+    <script src="../javascript/adminProducts.js"></script>
+</body>
+
+</html>
